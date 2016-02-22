@@ -91,8 +91,8 @@
 				<!-- Pls download my resume -->
 				<!-- It's made from JSON, thrown into a template and converted to these file formats -->
 				<div class="content__bottom">
-					<a href="/resume/resume.pdf" class="expanded download button" target="_blank">Download r&#233;sum&#233; (PDF)</a>
-					<p class="button__aside">Also in <a href="/resume/" target="_blank">HTML</a> and <a href="/resume/resume.json" target="_blank">JSON</a>.</p>
+					<a href="/resume/resume.pdf" class="expanded download button" onclick="ga('send','event','Viewed Resume','/resume/resume.pdf')" target="_blank">Download r&#233;sum&#233; (PDF)</a>
+					<p class="button__aside">Also in <a href="/resume/" onclick="ga('send','event','Viewed Resume','/resume/')" target="_blank">HTML</a> and <a href="/resume/resume.json" onclick="ga('send','event','Viewed Resume','/resume/resume.json')" target="_blank">JSON</a>.</p>
 				</div>
 			</div>
 		</div>
@@ -105,16 +105,16 @@
 		<!-- I'm social. Sometimes. -->
 		<div class="footer__social">
 			<p>
-				<a href="https://twitter.com/jordsta" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-twitter"></i></a>
-				<a href="https://www.linkedin.com/in/jordsta" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-linkedin"></i></a>
-				<a href="https://medium.com/@jordsta" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-medium"></i></a>
-				<a href="https://github.com/j0rdsta" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-github"></i></a>
+				<a href="https://twitter.com/jordsta" onclick="ga('send','event','Viewed Social Media','https://twitter.com/jordsta')" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-twitter"></i></a>
+				<a href="https://www.linkedin.com/in/jordsta" onclick="ga('send','event','Viewed Social Media','https://www.linkedin.com/in/jordsta')" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-linkedin"></i></a>
+				<a href="https://medium.com/@jordsta" onclick="ga('send','event','Viewed Social Media','https://medium.com/@jordsta')" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-medium"></i></a>
+				<a href="https://github.com/j0rdsta" onclick="ga('send','event','Viewed Social Media','https://github.com/j0rdsta')" target="_blank" class="outline round button"><i class="fa fa-lg fa-fw fa-github"></i></a>
 			</p>
 		</div>
 		<div class="footer__contact">
 			<!-- This uses Typeform. Check it out if you haven't already! -->
 			<p>
-				<a href="https://jordsta1.typeform.com/to/V7fzwP" target="_blank" data-mode="2" class="inverse rounded expanded button typeform-share link">Email Jordan</a>
+				<a href="https://jordsta1.typeform.com/to/V7fzwP" onclick="ga('send','event','Contact Form','https://jordsta1.typeform.com/to/V7fzwP')" target="_blank" data-mode="2" class="inverse rounded expanded button typeform-share link">Email Jordan</a>
 			</p>
 			<script>(function () {
 				var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = 'typef_orm', b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
