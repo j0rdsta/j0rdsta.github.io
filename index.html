@@ -1,14 +1,30 @@
 <!doctype html>
-<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Person">
+<html class="no-js" lang="en">
 <head>
-	<meta charset="utf-8" />
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!--
 	Welcome to Jordsta.com.
 	Please enjoy your stay.
 -->
+
+	<!-- Google Webfonts first, 'coz Google demands it -->
+	<script type="text/javascript">
+	WebFontConfig = {
+		google: { families: [ 'Karla:400,700:latin', 'Catamaran:800:latin' ] }
+	};
+	(function() {
+		var wf = document.createElement('script');
+		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+		wf.type = 'text/javascript';
+		wf.async = 'true';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(wf, s);
+	})(); </script>
+
+	<!-- Charsets and viewports -->
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- Title/description -->
 	<title>This is Jordsta / Jordan Gardiner's Website</title>
@@ -32,6 +48,7 @@
 	<meta itemprop="name" content="This is Jordsta / The website of Jordan Gardiner, a web designer and developer">
 	<meta itemprop="description" content="Jordan 'Jordsta' Gardiner is an Australian web designer/developer and entrepreneur skilled in everything PHP, Laravel, HTML5, CSS3 and JavaScript.">
 	<meta itemprop="image" content="http://jordsta.com/assets/img/jordan-photo.jpg">
+
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:site" content="@jordsta">
@@ -40,8 +57,8 @@
 	<meta name="twitter:creator" content="@jordsta">
 	<meta name="twitter:image:src" content="http://jordsta.com/assets/img/jordan-photo.jpg">
 	<meta name="twitter:player" content="">
+
 	<!-- Open Graph General (Facebook & Pinterest) -->
-	<!--<meta property="og:url" content="http://www.jordsta.com">-->
 	<meta property="og:url" content="http://jordsta.com">
 	<meta property="og:title" content="This is Jordsta / The website of Jordan Gardiner, a web designer and developer">
 	<meta property="og:description" content="Jordan 'Jordsta' Gardiner is an Australian web designer/developer and entrepreneur skilled in everything PHP, Laravel, HTML5, CSS3 and JavaScript.">
@@ -50,8 +67,23 @@
 	<meta property="fb:admins" content="1036031823">
 	<meta property="og:type" content="website">
 
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "Person",
+			"address": {
+				"@type": "PostalAddress",
+				"addressLocality": "Gold Coast",
+				"addressRegion": "QLD"
+			},
+			"image": "http://jordsta.com/assets/img/jordan-photo.jpg",
+			"jobTitle": "Web Designer/Developer",
+			"name": "Jordan Gardiner",
+			"url": "http://jordsta.com"
+		}
+	</script>
+
 	<!-- Stylesheets -->
-	<link href='https://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body data-interchange="[assets/img/jordan-photo-small.jpg, small], [assets/img/jordan-photo-medium.jpg, medium], [assets/img/jordan-photo.jpg, large]">
@@ -81,12 +113,11 @@
 		<div class="content__inner">
 			<div class="content__text">
 				<h1>
-					Dependable,<br>
-					extensible, and<br>
-					with added <span class="line-light">quirk.</span>
+					Dependable<span class="punctuation">,</span> extensible<span class="punctuation">,</span><br>
+					and with added <span class="line-light">quirk<span class="punctuation">.</span></span>
 				</h1>
-				<p>Hi, I&#x27;m <strong itemprop="name">Jordan Gardiner</strong>, a <span itemprop="jobtitle">web designer/developer</span> and entrepreneur. For nearly eight years I&#x27;ve hand-crafted countless beautiful, accessible and responsive websites and web apps on the sunny <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="addressLocality">Gold Coast</span>, <span itemprop="addressCountry">Australia</span></span>.</p>
-				<p><strong>I'm available now for local, national and international job opportunities.</strong></p>
+				<p>Hi, I&#x27;m <strong itemprop="name">Jordan Gardiner</strong>, a <span itemprop="jobtitle">web designer/developer</span> &amp; entrepreneur. For over eight years I&#x27;ve hand-crafted countless beautiful responsive websites &amp; web apps in the south-east region of Queensland, Australia.</p>
+				<p><strong>I'm happily employed, but always open for local, national and international job opportunities.</strong></p>
 
 				<!-- Pls download my resume -->
 				<!-- It's made from JSON, thrown into a template and converted to these file formats -->
@@ -144,7 +175,7 @@
 </script>
 
 <!-- Minified JS -->
-<script src="assets/js/app.js"></script>
+<script async src="assets/js/app.js"></script>
 
 <!-- And we're done! -->
 <!-- Thanks so much for visiting. -->
